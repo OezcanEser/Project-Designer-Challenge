@@ -19,6 +19,10 @@ h2 {
     font-size: 3rem;
 }
 
+p {
+    font-weight: 100;
+}
+
 /* defaul end */
 
 /* header beginn */
@@ -71,7 +75,7 @@ header img {
 
 #heroContent h1 span {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 #heroContent h1 span:nth-of-type(1):after {
@@ -88,6 +92,7 @@ header img {
     color: #ff3571;
     position: absolute;
     bottom: 15%;
+    font-weight: 600;
 }
 
 .heroImg {
@@ -160,7 +165,6 @@ header img {
 #ideas > p {
     width: 50vw;
     line-height: 3vh;
-    font-weight: 100;
     padding: 3% 8% 0% 9%;
 }
 
@@ -170,7 +174,41 @@ header img {
 }
 
 #ideas section {
-    width: 35vw;
+    width: 35%;
+    position: relative;
+    margin: 5%;
+    line-height: 4vh;
 }
+
+#ideas section:nth-of-type(1) h4::before {
+    background: url(../img/title02.svg) no-repeat;
+}
+
+#ideas section:nth-of-type(2) h4::before {
+    background: url(../img/title02.svg.png) no-repeat;
+}
+
+#ideas section:nth-of-type(3) h4::before {
+    background: url(../img/title04.svg) no-repeat;
+}
+
+#ideas section:nth-of-type(4) h4::before {
+    background: url(../img/title03.svg) no-repeat;
+}
+
+#ideas section:nth-of-type(1) h4::before,
+#ideas section:nth-of-type(2) h4::before,
+#ideas section:nth-of-type(3) h4::before,
+#ideas section:nth-of-type(4) h4::before {
+    content: "";
+    background-size: 100%;
+    display: inline-block;
+    width: 4vw;
+    height: 7vh;
+    position: absolute;
+    left: -16%;
+    bottom: 8vh;
+}
+
 
 /* ideas end */
